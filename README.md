@@ -1,6 +1,6 @@
 # gpd
 
-```mermaid
+
 graph TD;
 
     Inicio((Início))
@@ -64,6 +64,8 @@ graph TD;
 
     Sair[Sair]
 
+    
+```mermaid
     Inicio --> Destaques
     Inicio --> Novidades
     Inicio --> Promocoes
