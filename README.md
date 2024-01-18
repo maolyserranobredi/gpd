@@ -1,5 +1,3 @@
-# gpd
-
 graph TD;
 
     Inicio((Início))
@@ -21,6 +19,45 @@ graph TD;
     Inicio --> App
     Inicio --> Sustentabilidade
     Inicio --> Configuracoes
+    Inicio --> Ajuda
+
+    Marcas --> SCA
+    Marcas --> SpazioDelBagno
+    Marcas --> Saccaro
+    Marcas --> MaisDesign
+    Marcas --> Portobello
+
+    Profissionais --> Arquitetos
+    Profissionais --> DesignersInteriores
+    Profissionais --> Projetistas
+    Profissionais --> Engenheiros
+
+    Experiencias --> ProjetosRealizados
+    Experiencias --> AvaliacoesDepoimentos
+
+    Servicos --> ConsultoriaDecoracao
+    Servicos --> ProjetosPersonalizados
+    Servicos --> InstalacaoManutencao
+
+    Lojas --> Localizacao
+    Lojas --> HorarioFuncionamento
+    Lojas --> InformacoesContato
+
+    App --> AreaCadastroLogin
+    App --> RecursosProfissionais
+    App --> SuporteTecnico
+
+    Sustentabilidade --> CompromissosAmbientais
+    Sustentabilidade --> ParticipacaoCausasSociais
+
+    Configuracoes --> PerfilUsuario
+    Configuracoes --> PreferenciasNotificacao
+    Configuracoes --> Idioma
+
+    Ajuda --> PerguntasFrequentes
+    Ajuda --> CentralAjuda
+    Ajuda --> Contato
+
     Inicio --> Ajuda
 
     Marcas --> SCA
