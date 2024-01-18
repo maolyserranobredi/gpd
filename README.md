@@ -1,129 +1,61 @@
 # gpd
 
-
 graph TD;
 
     Inicio((Início))
-    Destaques[Destaques]
-    Novidades[Novidades]
-    Promocoes[Promoções]
+    Marcas[Marcas]
+    Profissionais[Profissionais]
+    Experiencias[Experiências]
+    Servicos[Serviços]
+    Lojas[Lojas]
+    App[App]
+    Sustentabilidade[Sustentabilidade]
+    Configuracoes[Configurações]
+    Ajuda[Ajuda]
 
-    CatalogoMarcas[Catálogo de Marcas]
-    SCA[SCA]
-    SpazioDelBagno[Spazio Del Bagno]
-    Saccaro[Saccaro]
-    MaisDesign[+Design]
-    Portobello[Portobello]
+    Inicio --> Marcas
+    Inicio --> Profissionais
+    Inicio --> Experiencias
+    Inicio --> Servicos
+    Inicio --> Lojas
+    Inicio --> App
+    Inicio --> Sustentabilidade
+    Inicio --> Configuracoes
+    Inicio --> Ajuda
 
-    ExplorarCategorias[Explorar Categorias]
-    MoveisAssinados[Móveis Assinados]
-    Revestimentos[Revestimentos]
-    DecoracaoBanheiros[Decoração de Banheiros]
-    ObjetosDesign[Objetos de Design]
-    Outros[Outros]
+    Marcas --> SCA
+    Marcas --> SpazioDelBagno
+    Marcas --> Saccaro
+    Marcas --> MaisDesign
+    Marcas --> Portobello
 
-    ProfissionaisSetor[Profissionais do Setor]
-    Arquitetos[Arquitetos]
-    DesignersInteriores[Designers de Interiores]
-    Projetistas[Projetistas]
-    Engenheiros[Engenheiros]
-    BuscaProfissionais[Busca por Profissionais]
+    Profissionais --> Arquitetos
+    Profissionais --> DesignersInteriores
+    Profissionais --> Projetistas
+    Profissionais --> Engenheiros
 
-    ExperienciasClientes[Experiências dos Clientes]
-    ProjetosRealizados[Projetos Realizados]
-    AvaliacoesDepoimentos[Avaliações e Depoimentos]
+    Experiencias --> ProjetosRealizados
+    Experiencias --> AvaliacoesDepoimentos
 
-    ServicosEspecializados[Serviços Especializados]
-    ConsultoriaDecoracao[Consultoria de Decoração]
-    ProjetosPersonalizados[Projetos Personalizados]
-    InstalacaoManutencao[Instalação e Manutenção]
+    Servicos --> ConsultoriaDecoracao
+    Servicos --> ProjetosPersonalizados
+    Servicos --> InstalacaoManutencao
 
-    LojasFisicas[Lojas Físicas]
-    Localizacao[Localização]
-    HorarioFuncionamento[Horário de Funcionamento]
-    InformacoesContato[Informações de Contato]
+    Lojas --> Localizacao
+    Lojas --> HorarioFuncionamento
+    Lojas --> InformacoesContato
 
-    AppProfissionais[Aplicativo Exclusivo para Profissionais]
-    AreaCadastroLogin[Área de Cadastro/Login]
-    RecursosProfissionais[Recursos Especiais para Profissionais]
-    SuporteTecnico[Suporte Técnico]
+    App --> AreaCadastroLogin
+    App --> RecursosProfissionais
+    App --> SuporteTecnico
 
-    SustentabilidadeSocial[Sustentabilidade e Responsabilidade Social]
-    CompromissosAmbientais[Compromissos Ambientais]
-    ParticipacaoCausasSociais[Participação em Causas Sociais]
+    Sustentabilidade --> CompromissosAmbientais
+    Sustentabilidade --> ParticipacaoCausasSociais
 
-    ConfiguracoesApp[Configurações do Aplicativo]
-    PerfilUsuario[Perfil do Usuário]
-    PreferenciasNotificacao[Preferências de Notificação]
-    Idioma[Idioma]
+    Configuracoes --> PerfilUsuario
+    Configuracoes --> PreferenciasNotificacao
+    Configuracoes --> Idioma
 
-    AjudaSuporte[Ajuda e Suporte]
-    PerguntasFrequentes[Perguntas Frequentes (FAQ)]
-    CentralAjuda[Central de Ajuda]
-    Contato[Contato]
-
-    Sair[Sair]
-
-    
-```mermaid
-    Inicio --> Destaques
-    Inicio --> Novidades
-    Inicio --> Promocoes
-
-    Inicio --> CatalogoMarcas
-    CatalogoMarcas --> SCA
-    CatalogoMarcas --> SpazioDelBagno
-    CatalogoMarcas --> Saccaro
-    CatalogoMarcas --> MaisDesign
-    CatalogoMarcas --> Portobello
-
-    Inicio --> ExplorarCategorias
-    ExplorarCategorias --> MoveisAssinados
-    ExplorarCategorias --> Revestimentos
-    ExplorarCategorias --> DecoracaoBanheiros
-    ExplorarCategorias --> ObjetosDesign
-    ExplorarCategorias --> Outros
-
-    Inicio --> ProfissionaisSetor
-    ProfissionaisSetor --> Arquitetos
-    ProfissionaisSetor --> DesignersInteriores
-    ProfissionaisSetor --> Projetistas
-    ProfissionaisSetor --> Engenheiros
-    ProfissionaisSetor --> BuscaProfissionais
-
-    Inicio --> ExperienciasClientes
-    ExperienciasClientes --> ProjetosRealizados
-    ExperienciasClientes --> AvaliacoesDepoimentos
-
-    Inicio --> ServicosEspecializados
-    ServicosEspecializados --> ConsultoriaDecoracao
-    ServicosEspecializados --> ProjetosPersonalizados
-    ServicosEspecializados --> InstalacaoManutencao
-
-    Inicio --> LojasFisicas
-    LojasFisicas --> Localizacao
-    LojasFisicas --> HorarioFuncionamento
-    LojasFisicas --> InformacoesContato
-
-    Inicio --> AppProfissionais
-    AppProfissionais --> AreaCadastroLogin
-    AppProfissionais --> RecursosProfissionais
-    AppProfissionais --> SuporteTecnico
-
-    Inicio --> SustentabilidadeSocial
-    SustentabilidadeSocial --> CompromissosAmbientais
-    SustentabilidadeSocial --> ParticipacaoCausasSociais
-
-    Inicio --> ConfiguracoesApp
-    ConfiguracoesApp --> PerfilUsuario
-    ConfiguracoesApp --> PreferenciasNotificacao
-    ConfiguracoesApp --> Idioma
-
-    Inicio --> AjudaSuporte
-    AjudaSuporte --> PerguntasFrequentes
-    AjudaSuporte --> CentralAjuda
-    AjudaSuporte --> Contato
-
-    Inicio --> Sair
-
-```
+    Ajuda --> PerguntasFrequentes
+    Ajuda --> CentralAjuda
+    Ajuda --> Contato
