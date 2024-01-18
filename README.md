@@ -1,118 +1,50 @@
-Certamente! Vou criar uma representação básica da estrutura da arquitetura do aplicativo mobile do GPD usando o Markdown Preview Mermaid Support. Considere que este é um exemplo simplificado, e a arquitetura real pode ser mais complexa, dependendo dos requisitos específicos. Utilizarei o formato Mermaid para representar o sitemap.
+![image](https://github.com/maolyserranobredi/gpd/assets/155574633/4ca5a7d2-31e3-4c23-96db-b1d8c7a85e2e)
+flowchart TD
+    A[ GPD  Grupo Paraense de Decoração
+] -->|Explorar Categorias| B(Móveis Assinados)
+    A -->|Explorar Categorias| C(Revestimentos)
+    A -->|Explorar Categorias| D(Decoração de Banheiros)
+    A -->|Explorar Categorias| E(Objetos de Design)
+    A -->|Explorar Categorias| F(Outros)
+    
+    B --> G[Profissionais do Setor]
+    C --> G
+    D --> G
+    E --> G
+    F --> G
+    
+    G -->|Arquitetos| H{Projetos}
+    G -->|Designers de Interiores| I{Projetos}
+    G -->|Projetistas| J{Projetos}
+    G -->|Engenheiros| K{Projetos}
+    G -->|Busca por Profissionais| L{Projetos}
+    
+    H -->|Projetos Realizados| M(Experiências dos Clientes)
+    I -->|Projetos Realizados| M
+    J -->|Projetos Realizados| M
+    K -->|Projetos Realizados| M
+    L -->|Projetos Realizados| M
+    
+    M --> N[Serviços Especializados]
+    
+    N -->|Consultoria de Decoração| O(Consultoria)
+    N -->|Projetos Personalizados| P(Projetos)
+    N -->|Instalação e Manutenção| Q(Instalação e Manutenção)
+    
+    O --> R[Lojas Físicas]
+    
+    R -->|Localização| S[Mapa]
+    R -->|Horário de Funcionamento| T[Horários]
+    R -->|Informações de Contato| U[Contato]
+    
+    A -->|Aplicativo Exclusivo| V(Profissionais)
+    A -->|Aplicativo Exclusivo| W(Configurações)
+    A -->|Aplicativo Exclusivo| X(Ajuda e Suporte)
+    
+    V --> Y[Área de Cadastro/Login]
+    V --> Z[Recursos Especiais]
+   
 
-```mermaid
-graph TD
-  subgraph "Público Geral"
-    Inicio((Início))
-    Destaques[Destaques]
-    Novidades[Novidades]
-    Promoções[Promoções]
-  end
 
-  subgraph "Catálogo de Marcas"
-    Marcas[Catálogo de Marcas]
-    SCA[SCA]
-    SpazioDelBagno[Spazio Del Bagno]
-    Saccaro[Saccaro]
-    MaisDesign[+Design]
-    Portobello[Portobello]
-  end
-
-  subgraph "Explorar Categorias"
-    Categorias[Explorar Categorias]
-    MoveisAssinados[Móveis Assinados]
-    Revestimentos[Revestimentos]
-    DecoracaoBanheiros[Decoração de Banheiros]
-    ObjetosDesign[Objetos de Design]
-    Outros[Outros]
-  end
-
-  subgraph "Profissionais do Setor"
-    Profissionais[Profissionais do Setor]
-    Arquitetos[Arquitetos]
-    DesignersInteriores[Designers de Interiores]
-    Projetistas[Projetistas]
-    Engenheiros[Engenheiros]
-    BuscaProfissionais[Busca por Profissionais]
-  end
-
-  subgraph "Experiências dos Clientes"
-    Experiencias[Experiências dos Clientes]
-    ProjetosRealizados[Projetos Realizados]
-    AvaliacoesDepoimentos[Avaliações e Depoimentos]
-  end
-
-  subgraph "Serviços Especializados"
-    ServicosEspecializados[Serviços Especializados]
-    ConsultoriaDecoracao[Consultoria de Decoração]
-    ProjetosPersonalizados[Projetos Personalizados]
-    InstalacaoManutencao[Instalação e Manutenção]
-  end
-
-  subgraph "Lojas Físicas"
-    LojasFisicas[Lojas Físicas]
-    Localizacao[Localização]
-    HorarioFuncionamento[Horário de Funcionamento]
-    InformacoesContato[Informações de Contato]
-  end
-
-  subgraph "Aplicativo Exclusivo para Profissionais"
-    AppProfissionais[Aplicativo Exclusivo para Profissionais]
-    AreaCadastroLogin[Área de Cadastro/Login]
-    RecursosProfissionais[Recursos Especiais para Profissionais]
-    SuporteTecnico[Suporte Técnico]
-  end
-
-  subgraph "Sustentabilidade e Responsabilidade Social"
-    SustentabilidadeSocial[Sustentabilidade e Responsabilidade Social]
-    CompromissosAmbientais[Compromissos Ambientais]
-    ParticipacaoCausasSociais[Participação em Causas Sociais]
-  end
-
-  subgraph "Configurações do Aplicativo"
-    ConfiguracoesApp[Configurações do Aplicativo]
-    PerfilUsuario[Perfil do Usuário]
-    PreferenciasNotificacao[Preferências de Notificação]
-    Idioma[Idioma]
-  end
-
-  subgraph "Ajuda e Suporte"
-    AjudaSuporte[Ajuda e Suporte]
-    PerguntasFrequentes[Perguntas Frequentes (FAQ)]
-    CentralAjuda[Central de Ajuda]
-    Contato[Contato]
-  end
-
-  subgraph "Sair"
-    Sair[Sair]
-  end
-
-  Inicio --> Destaques
-  Inicio --> Novidades
-  Inicio --> Promoções
-
-  Inicio --> Marcas
-  Marcas --> SCA
-  Marcas --> SpazioDelBagno
-  Marcas --> Saccaro
-  Marcas --> MaisDesign
-  Marcas --> Portobello
-
-  Inicio --> Categorias
-  Categorias --> MoveisAssinados
-  Categorias --> Revestimentos
-  Categorias --> DecoracaoBanheiros
-  Categorias --> ObjetosDesign
-  Categorias --> Outros
-
-  Inicio --> Profissionais
-  Profissionais --> Arquitetos
-  Profissionais --> DesignersInteriores
-  Profissionais --> Projetistas
-  Profissionais --> Engenheiros
-  Profissionais --> BuscaProfissionais
-
-  Inicio --> Experiencias
-  Experiencias --> ProjetosRealizados
-  Experiencias --> AvaliacoesDepoimentos
+  
 
