@@ -1,98 +1,118 @@
-graph TD;
+Certamente! Vou criar uma representação básica da estrutura da arquitetura do aplicativo mobile do GPD usando o Markdown Preview Mermaid Support. Considere que este é um exemplo simplificado, e a arquitetura real pode ser mais complexa, dependendo dos requisitos específicos. Utilizarei o formato Mermaid para representar o sitemap.
 
+```mermaid
+graph TD
+  subgraph "Público Geral"
     Inicio((Início))
-    Marcas[Marcas]
-    Profissionais[Profissionais]
-    Experiencias[Experiências]
-    Servicos[Serviços]
-    Lojas[Lojas]
-    App[App]
-    Sustentabilidade[Sustentabilidade]
-    Configuracoes[Configurações]
-    Ajuda[Ajuda]
+    Destaques[Destaques]
+    Novidades[Novidades]
+    Promoções[Promoções]
+  end
 
-    Inicio --> Marcas
-    Inicio --> Profissionais
-    Inicio --> Experiencias
-    Inicio --> Servicos
-    Inicio --> Lojas
-    Inicio --> App
-    Inicio --> Sustentabilidade
-    Inicio --> Configuracoes
-    Inicio --> Ajuda
+  subgraph "Catálogo de Marcas"
+    Marcas[Catálogo de Marcas]
+    SCA[SCA]
+    SpazioDelBagno[Spazio Del Bagno]
+    Saccaro[Saccaro]
+    MaisDesign[+Design]
+    Portobello[Portobello]
+  end
 
-    Marcas --> SCA
-    Marcas --> SpazioDelBagno
-    Marcas --> Saccaro
-    Marcas --> MaisDesign
-    Marcas --> Portobello
+  subgraph "Explorar Categorias"
+    Categorias[Explorar Categorias]
+    MoveisAssinados[Móveis Assinados]
+    Revestimentos[Revestimentos]
+    DecoracaoBanheiros[Decoração de Banheiros]
+    ObjetosDesign[Objetos de Design]
+    Outros[Outros]
+  end
 
-    Profissionais --> Arquitetos
-    Profissionais --> DesignersInteriores
-    Profissionais --> Projetistas
-    Profissionais --> Engenheiros
+  subgraph "Profissionais do Setor"
+    Profissionais[Profissionais do Setor]
+    Arquitetos[Arquitetos]
+    DesignersInteriores[Designers de Interiores]
+    Projetistas[Projetistas]
+    Engenheiros[Engenheiros]
+    BuscaProfissionais[Busca por Profissionais]
+  end
 
-    Experiencias --> ProjetosRealizados
-    Experiencias --> AvaliacoesDepoimentos
+  subgraph "Experiências dos Clientes"
+    Experiencias[Experiências dos Clientes]
+    ProjetosRealizados[Projetos Realizados]
+    AvaliacoesDepoimentos[Avaliações e Depoimentos]
+  end
 
-    Servicos --> ConsultoriaDecoracao
-    Servicos --> ProjetosPersonalizados
-    Servicos --> InstalacaoManutencao
+  subgraph "Serviços Especializados"
+    ServicosEspecializados[Serviços Especializados]
+    ConsultoriaDecoracao[Consultoria de Decoração]
+    ProjetosPersonalizados[Projetos Personalizados]
+    InstalacaoManutencao[Instalação e Manutenção]
+  end
 
-    Lojas --> Localizacao
-    Lojas --> HorarioFuncionamento
-    Lojas --> InformacoesContato
+  subgraph "Lojas Físicas"
+    LojasFisicas[Lojas Físicas]
+    Localizacao[Localização]
+    HorarioFuncionamento[Horário de Funcionamento]
+    InformacoesContato[Informações de Contato]
+  end
 
-    App --> AreaCadastroLogin
-    App --> RecursosProfissionais
-    App --> SuporteTecnico
+  subgraph "Aplicativo Exclusivo para Profissionais"
+    AppProfissionais[Aplicativo Exclusivo para Profissionais]
+    AreaCadastroLogin[Área de Cadastro/Login]
+    RecursosProfissionais[Recursos Especiais para Profissionais]
+    SuporteTecnico[Suporte Técnico]
+  end
 
-    Sustentabilidade --> CompromissosAmbientais
-    Sustentabilidade --> ParticipacaoCausasSociais
+  subgraph "Sustentabilidade e Responsabilidade Social"
+    SustentabilidadeSocial[Sustentabilidade e Responsabilidade Social]
+    CompromissosAmbientais[Compromissos Ambientais]
+    ParticipacaoCausasSociais[Participação em Causas Sociais]
+  end
 
-    Configuracoes --> PerfilUsuario
-    Configuracoes --> PreferenciasNotificacao
-    Configuracoes --> Idioma
+  subgraph "Configurações do Aplicativo"
+    ConfiguracoesApp[Configurações do Aplicativo]
+    PerfilUsuario[Perfil do Usuário]
+    PreferenciasNotificacao[Preferências de Notificação]
+    Idioma[Idioma]
+  end
 
-    Ajuda --> PerguntasFrequentes
-    Ajuda --> CentralAjuda
-    Ajuda --> Contato
+  subgraph "Ajuda e Suporte"
+    AjudaSuporte[Ajuda e Suporte]
+    PerguntasFrequentes[Perguntas Frequentes (FAQ)]
+    CentralAjuda[Central de Ajuda]
+    Contato[Contato]
+  end
 
-    Inicio --> Ajuda
+  subgraph "Sair"
+    Sair[Sair]
+  end
 
-    Marcas --> SCA
-    Marcas --> SpazioDelBagno
-    Marcas --> Saccaro
-    Marcas --> MaisDesign
-    Marcas --> Portobello
+  Inicio --> Destaques
+  Inicio --> Novidades
+  Inicio --> Promoções
 
-    Profissionais --> Arquitetos
-    Profissionais --> DesignersInteriores
-    Profissionais --> Projetistas
-    Profissionais --> Engenheiros
+  Inicio --> Marcas
+  Marcas --> SCA
+  Marcas --> SpazioDelBagno
+  Marcas --> Saccaro
+  Marcas --> MaisDesign
+  Marcas --> Portobello
 
-    Experiencias --> ProjetosRealizados
-    Experiencias --> AvaliacoesDepoimentos
+  Inicio --> Categorias
+  Categorias --> MoveisAssinados
+  Categorias --> Revestimentos
+  Categorias --> DecoracaoBanheiros
+  Categorias --> ObjetosDesign
+  Categorias --> Outros
 
-    Servicos --> ConsultoriaDecoracao
-    Servicos --> ProjetosPersonalizados
-    Servicos --> InstalacaoManutencao
+  Inicio --> Profissionais
+  Profissionais --> Arquitetos
+  Profissionais --> DesignersInteriores
+  Profissionais --> Projetistas
+  Profissionais --> Engenheiros
+  Profissionais --> BuscaProfissionais
 
-    Lojas --> Localizacao
-    Lojas --> HorarioFuncionamento
-    Lojas --> InformacoesContato
+  Inicio --> Experiencias
+  Experiencias --> ProjetosRealizados
+  Experiencias --> AvaliacoesDepoimentos
 
-    App --> AreaCadastroLogin
-    App --> RecursosProfissionais
-    App --> SuporteTecnico
-
-    Sustentabilidade --> CompromissosAmbientais
-    Sustentabilidade --> ParticipacaoCausasSociais
-
-    Configuracoes --> PerfilUsuario
-    Configuracoes --> PreferenciasNotificacao
-    Configuracoes --> Idioma
-
-    Ajuda --> PerguntasFrequentes
-    Ajuda --> CentralAjuda
-    Ajuda --> Contato
